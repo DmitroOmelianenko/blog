@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Блог</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="form-section">
+      <h2>Створити пост</h2>
+      <form id="postForm">
+        <input type="text" name="title" placeholder="Назва" required>
+        <input type="text" name="author" placeholder="Автор" required>
+        <input type="text" name="date" placeholder="Дата (YYYY-MM-DD)" required>
+        <input type="text" name="image" placeholder="URL зображення" required>
+        <textarea name="description" placeholder="Опис" required></textarea>
+        <button class="add" type="submit">Додати</button>
+      </form>
+    </div>
+
+    <div class="posts-section">
+      <h2>Усі пости</h2>
+      <ul id="postList"></ul>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
